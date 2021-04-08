@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Register Here Now!<span>Registering an account &mdash; and pay registration fee within 24 hrs</span></h1>
+    <form class="signup-form" method="post" action="" onsubmit="return validation()">
+        <div class="section"><span>1</span>Full Name & D.O.B</div>
+        <div class="inner-wrap">
+            <label>Full Name <input placeholder="Enter full name" id="signup-name" type="text" name="name" minlength="2" maxlength="20" autocomplete="off" required/></label>
+            <label>Date of Birth <input type="date" id="signup-dob" name="dob" autocomplete="off" required/></label>
+        </div>
+    
+        <div class="section"><span>2</span>Email & Mobile</div>
+        <div class="inner-wrap">
+            <label>Email Address <input placeholder="Enter valid email" id="signup-email" type="email" name="email" autocomplete="off" required/></label>
+            <label>Mobile Number <input placeholder="Enter 10 digit number" id="signup-mobile" type="text" name="mobile" minlength="10" maxlength="10" autocomplete="off" required/></label>
+        </div>
+    
+        <div class="section"><span>3</span>Passwords</div>
+            <div class="inner-wrap">
+            <label>Password <input placeholder="Enter strong password" id="signup-pw" type="password" name="pw" minlength="8" maxlength="20" autocomplete="off" required/></label>
+            <label>Confirm Password <input placeholder="Enter above password" id="signup-cpw" type="password" name="cpw" minlength="8" maxlength="20" autocomplete="off" required/></label>
+        </div>
+        <div class="button-section">
+         <input type="submit" name="Sign Up" />
+        </div>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
